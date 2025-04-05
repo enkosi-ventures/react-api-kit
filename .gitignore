@@ -1,0 +1,118 @@
+# --- Node.js / npm ---
+# Dependency directories
+node_modules/
+packages/*/node_modules/
+
+# Lockfiles (usually committed, but ignoring alternatives just in case)
+# package-lock.json # COMMIT THIS ONE FOR NPM
+# yarn.lock
+# pnpm-lock.yaml
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Optional npm cache directory
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Optional rollup cache
+.rollup.cache
+
+# Optional yarn cache directory
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Packed archives
+*.tgz
+
+
+# --- Build Output ---
+# TypeScript / Rollup build output directory
+dist/
+packages/*/dist/
+
+
+# --- TypeScript ---
+# TypeScript cache/build info files
+*.tsbuildinfo
+packages/**/*.tsbuildinfo
+
+
+# --- Testing (Vitest) ---
+# Coverage directory
+coverage/
+packages/*/coverage/
+
+# Vitest browser cache/output (if using browser mode)
+.vitest-browser/
+
+
+# --- Logs ---
+# General log files/directories
+logs/
+*.log
+
+
+# --- Environment Variables ---
+# Ignore environment files by default
+.env*
+!.env.example
+!.env.template
+
+
+# --- Operating System Files ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+$RECYCLE.BIN/
+Desktop.ini
+
+
+# --- Editor/IDE Files ---
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# JetBrains (WebStorm, IntelliJ, etc.)
+.idea/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Atom
+.atom/
+
+# Vim
+*~
+*.swp
+*.swo
+
+
+# --- Temporary Files ---
+*.tmp
+*.temp
+
+
+# --- Miscellaneous ---
+# Add any other project-specific ignores below

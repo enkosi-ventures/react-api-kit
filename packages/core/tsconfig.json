@@ -1,0 +1,14 @@
+// packages/core/tsconfig.json
+{
+  "extends": "../../tsconfig.json", // Make sure this path is correct
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "composite": true, // Usually good for monorepos
+    "baseUrl": ".",
+    // No need to override module unless necessary
+  },
+  "include": ["src/**/*"], // Ensure this includes src/__tests__ implicitly or explicitly add it if needed? No, test runner finds files.
+  "exclude": ["node_modules", "dist"], // Exclude dist and node_modules
+  "references": []
+}

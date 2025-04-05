@@ -1,0 +1,79 @@
+{
+  "name": "react-api-kit",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A comprehensive toolkit for handling client-side API interactions in React applications, featuring JWT authentication, token management, polling, state management, and an extensible plugin architecture.",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:enkosi-ventures/react-api-kit.git"
+  },
+  "keywords": [
+    "react",
+    "jwt",
+    "authentication",
+    "api",
+    "client",
+    "polling",
+    "state",
+    "management",
+    "plugin"
+  ],
+  "author": "Enkosi Ventures <enkosiventures@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "bootstrap": "npm install",
+    "build": "npm run build --workspaces --if-present",
+    "clean": "npm run clean --workspaces --if-present",
+    "dev": "npm run dev --workspace=@react-api-kit/core",
+    "lint": "npm run lint --workspaces --if-present",
+    "lint:fix": "npm run lint:fix --workspaces --if-present",
+    "test": "vitest run --coverage",
+    "test:watch": "vitest watch",
+    "format": "npx prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=22.13.0",
+    "npm": ">=10.9.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.10",
+    "@babel/preset-env": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "@babel/preset-typescript": "^7.27.0",
+    "@eslint/js": "^9.24.0",
+    "@rollup/plugin-commonjs": "^28.0.3",
+    "@rollup/plugin-node-resolve": "^16.0.1",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/react": "^15.0.7",
+    "@types/react": "^18.3.20",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
+    "@vitest/coverage-v8": "^3.1.1",
+    "@vitest/eslint-plugin": "^1.1.39",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-import-resolver-typescript": "^4.3.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "globals": "^16.0.0",
+    "lerna": "^8.2.1",
+    "prettier": "^3.5.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.39.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.29.0",
+    "vitest": "^3.1.1"
+  }
+}
