@@ -14,7 +14,7 @@ export default defineConfig({
     exclude: ['**/node_modules/**', '**/dist/**', '**/coverage/**'],
 
     // Optional: Global setup file (similar to jest.setup.js if needed)
-    // setupFiles: './vitest.setup.ts', // Create this file if you need global setup
+    setupFiles: './vitest.setup.ts', // Create this file if you need global setup
     globals: true, // Enable global variables like `describe`, `it`, etc.
 
     // Coverage configuration

@@ -1,5 +1,12 @@
 {
   "compilerOptions": {
+    // --- Add/Modify the 'types' array ---
+    "types": [
+      "node", // Include node types (commonly needed)
+      "vitest/globals" // Add Vitest global types
+    ],
+
+    // --- Existing options ---
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
@@ -13,21 +20,23 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node", // Or "NodeNext", "Bundler"
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "declaration": true,
     "sourceMap": true,
     "declarationMap": true,
-    "target": "ES2024",
+    "target": "ES2020", // Or higher if preferred
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "jsx": "react-jsx",
     "incremental": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      // Define paths if needed later
+    }
   },
-  "exclude": ["node_modules", "**/dist", "**/coverage", "**/*.config.js", "**/*.setup.js"]
+  "exclude": ["node_modules", "**/dist", "**/coverage", "**/*.config.js", "**/*.config.mjs", "**/*.config.ts", "**/*.setup.ts"]
 }
